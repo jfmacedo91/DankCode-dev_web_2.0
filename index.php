@@ -16,7 +16,7 @@
       $links = array();
 
       while($arquivo = $diretorio -> read()){
-        if($arquivo != "." && $arquivo != ".." && $arquivo != "index.php") {
+        if($arquivo != "." && $arquivo != ".." && $arquivo != "index.php" && $arquivo != ".git" && $arquivo != "README.md") {
           array_push($links, $arquivo);
         }
       }
